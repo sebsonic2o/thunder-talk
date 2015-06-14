@@ -2312,3 +2312,141 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:5
 
 
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 140ms (Views: 127.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:10:00 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 19:10:12 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WY+R4qCvKHO8dyBc1roT/P4YrCBy7Qq5+lD4Z0K9Ew=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 8ms
+
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:15:38 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:39 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WY+R4qCvKHO8dyBc1roT/P4YrCBy7Qq5+lD4Z0K9Ew=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+Redirected to http://localhost:8080/
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:15:49 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 19:24:25 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WY+R4qCvKHO8dyBc1roT/P4YrCBy7Qq5+lD4Z0K9Ew=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+Redirected to http://localhost:8080/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:24:25 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:24:26 -0700

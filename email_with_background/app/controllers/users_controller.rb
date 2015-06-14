@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    UserMailer.welcome_email(@user).deliver
+    UserMailer.delay.welcome_email(@user)
 
     redirect_to '/'
   end
