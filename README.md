@@ -9,4 +9,4 @@ A simple experiment with background processes. This repo includes the following:
 
 Here we have a side by side network comparison of the same app running with and without using a background process:
 
-[Network Comparison](./SideBySideComparison.png)
+![Network Comparison](./SideBySideComparison.png)
