@@ -6,6 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+    # @user.save
+
     UserMailer.delay.welcome_email(@user)
 
     redirect_to '/'
