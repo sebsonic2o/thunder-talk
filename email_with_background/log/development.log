@@ -1,0 +1,2314 @@
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150614003156)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150614003156"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:39:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 79ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:   <%= f.label :email %>:
+    3:   <%= f.text_field :email %><br />
+    4: 
+  app/views/users/new.html.erb:1:in `_app_views_users_new_html_erb__1828350489726955643_70300754774960'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:40:27 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (124.7ms)
+Completed 200 OK in 1691ms (Views: 1687.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:40:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 120ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:41:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 131ms (Views: 118.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:42:53 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:42:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:43:06 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:43:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:43:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:43:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:44:17 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:44:30 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/Desktop/thunder-talk/email_no_background/app/views"
+):
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:04 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:45:05 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+Redirected to 
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `new_url' for #<UsersController:0x007f91aeb5b110>):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:45:31 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:   <%= f.label :email %>
+    3:   <%= f.text_field :email %><br /><br />
+    4: 
+  app/views/users/new.html.erb:1:in `_app_views_users_new_html_erb___2280763872382821608_70131841092640'
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:45:37 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:45:39 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:   <%= f.label :email %>
+    3:   <%= f.text_field :email %><br /><br />
+    4: 
+  app/views/users/new.html.erb:1:in `_app_views_users_new_html_erb___2280763872382821608_70131841092640'
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:47 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:47:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:20 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>""}, "commit"=>"Create User"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 17:48:21 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:02:48 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"scheraux@gmail.com"}, "commit"=>"Create User"}
+
+UserMailer#welcome_email: processed outbound mail in 5.0ms
+Completed 500 Internal Server Error in 16ms
+
+ActionView::MissingTemplate (Missing template user_mailer/welcome_email with "mailer". Searched in:
+  * "user_mailer"
+):
+  app/mailers/user_mailer.rb:7:in `welcome_email'
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:03:27 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"scheraux@gmail.com"}, "commit"=>"Create User"}
+
+UserMailer#welcome_email: processed outbound mail in 4.1ms
+Completed 500 Internal Server Error in 16ms
+
+ActionView::MissingTemplate (Missing template user_mailer/welcome_email with "mailer". Searched in:
+  * "user_mailer"
+):
+  app/mailers/user_mailer.rb:7:in `welcome_email'
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-06-13 18:03:29 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:03:43 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:03:49 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"scheraux@gmail.com"}, "commit"=>"Create User"}
+
+UserMailer#welcome_email: processed outbound mail in 4.6ms
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template user_mailer/welcome_email with "mailer". Searched in:
+  * "user_mailer"
+):
+  app/mailers/user_mailer.rb:7:in `welcome_email'
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:09:29 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:30 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:09:36 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"scheraux@gmail.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.5ms)
+  Rendered user_mailer/welcome_email.text.erb (0.4ms)
+
+UserMailer#welcome_email: processed outbound mail in 267.9ms
+
+Sent mail to scheraux@gmail.com (78.2ms)
+Date: Sat, 13 Jun 2015 18:09:37 -0700
+From: notifications@example.com
+To: scheraux@gmail.com
+Message-ID: <557cd45111d13_e4a23fc8d5e9225c71814@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd451879_e4a23fc8d5e9225c717cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd451879_e4a23fc8d5e9225c717cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd451879_e4a23fc8d5e9225c717cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd451879_e4a23fc8d5e9225c717cd--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 352ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:09:37 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 7.8ms
+
+Sent mail to cheraux@yahoo.com (6.3ms)
+Date: Sat, 13 Jun 2015 18:10:39 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd48f42266_e4a23fc8d5fe3174720d7@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd48f4167b_e4a23fc8d5fe317471994";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd48f4167b_e4a23fc8d5fe317471994
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd48f4167b_e4a23fc8d5fe317471994
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd48f4167b_e4a23fc8d5fe317471994--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:10:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:10:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:10:58 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.0ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 9.0ms
+
+Sent mail to cheraux@yahoo.com (7.0ms)
+Date: Sat, 13 Jun 2015 18:11:14 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd4b25f8b3_e4a23fc8d88c978c722f2@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd4b25ef48_e4a23fc8d88c978c721d0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd4b25ef48_e4a23fc8d88c978c721d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd4b25ef48_e4a23fc8d88c978c721d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd4b25ef48_e4a23fc8d88c978c721d0--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:11:25 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:26 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:11:29 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 10.1ms
+
+Sent mail to cheraux@yahoo.com (3.9ms)
+Date: Sat, 13 Jun 2015 18:11:29 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd4c1ec41a_e4a23fc8d5f1efb8724ea@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd4c1ebba4_e4a23fc8d5f1efb872390";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd4c1ebba4_e4a23fc8d5f1efb872390
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd4c1ebba4_e4a23fc8d5f1efb872390
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd4c1ebba4_e4a23fc8d5f1efb872390--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:11:29 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:11:30 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 7.5ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:23 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:12:46 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 9.6ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:12:46 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:12:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:12:47 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:14:24 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 7.5ms
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `deliver_now' for #<Mail::Message:0x007f91b12ab698>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (50.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:21:16 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:17 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:21:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (1.7ms)
+  Rendered user_mailer/welcome_email.text.erb (0.4ms)
+
+UserMailer#welcome_email: processed outbound mail in 294.7ms
+Completed 500 Internal Server Error in 375ms
+
+NoMethodError (undefined method `deliver_now' for #<Mail::Message:0x007f9a24b07118>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:21:50 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (121.6ms)
+Completed 200 OK in 311ms (Views: 307.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:21:51 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:21:57 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.1ms)
+
+UserMailer#welcome_email: processed outbound mail in 7.9ms
+
+Sent mail to cheraux@yahoo.com (84.1ms)
+Date: Sat, 13 Jun 2015 18:21:57 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd735ccb3c_e9343fcd13c405ac49793@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd735c541d_e9343fcd13c405ac496ae";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd735c541d_e9343fcd13c405ac496ae
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd735c541d_e9343fcd13c405ac496ae
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd735c541d_e9343fcd13c405ac496ae--
+
+Completed 500 Internal Server Error in 99ms
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:24:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 128ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:24:32 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:24:37 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.4ms)
+  Rendered user_mailer/welcome_email.text.erb (0.3ms)
+
+UserMailer#welcome_email: processed outbound mail in 249.1ms
+
+Sent mail to cheraux@yahoo.com (1102.9ms)
+Date: Sat, 13 Jun 2015 18:24:37 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd7d5e53be_e9d53ff96cecf25c147b@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd7d5e4130_e9d53ff96cecf25c1463";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd7d5e4130_e9d53ff96cecf25c1463
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd7d5e4130_e9d53ff96cecf25c1463
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd7d5e4130_e9d53ff96cecf25c1463--
+
+Completed 500 Internal Server Error in 1361ms
+
+Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:25:50 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:25:51 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:25:57 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 8.6ms
+
+Sent mail to cheraux@yahoo.com (944.5ms)
+Date: Sat, 13 Jun 2015 18:25:57 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd825937d0_e9d53ff96cf4f9701497d@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd82592e01_e9d53ff96cf4f970148ed";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd82592e01_e9d53ff96cf4f970148ed
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd82592e01_e9d53ff96cf4f970148ed
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd82592e01_e9d53ff96cf4f970148ed--
+
+Completed 500 Internal Server Error in 956ms
+
+Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:27:23 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:27:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 135ms (Views: 120.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:27:34 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:28:17 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.4ms)
+  Rendered user_mailer/welcome_email.text.erb (0.3ms)
+
+UserMailer#welcome_email: processed outbound mail in 241.9ms
+
+Sent mail to cheraux@yahoo.com (282.3ms)
+Date: Sat, 13 Jun 2015 18:28:17 -0700
+From: notifications@example.com
+To: cheraux@yahoo.com
+Message-ID: <557cd8b1f0ff6_ea5d3fe0ee2f1660346dd@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd8b1efb72_ea5d3fe0ee2f1660345b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd8b1efb72_ea5d3fe0ee2f1660345b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd8b1efb72_ea5d3fe0ee2f1660345b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd8b1efb72_ea5d3fe0ee2f1660345b9--
+
+Completed 500 Internal Server Error in 531ms
+
+Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:28:39 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"andrewryancarpenter77@gmail.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 10.2ms
+
+Sent mail to andrewryancarpenter77@gmail.com (207.0ms)
+Date: Sat, 13 Jun 2015 18:28:39 -0700
+From: notifications@example.com
+To: andrewryancarpenter77@gmail.com
+Message-ID: <557cd8c7ee691_ea5d3fe0ee2f166034848@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd8c7edcdd_ea5d3fe0ee2f16603478d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd8c7edcdd_ea5d3fe0ee2f16603478d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd8c7edcdd_ea5d3fe0ee2f16603478d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd8c7edcdd_ea5d3fe0ee2f16603478d--
+
+Completed 500 Internal Server Error in 221ms
+
+Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 150ms (Views: 139.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:29:58 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:30:02 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.4ms)
+  Rendered user_mailer/welcome_email.text.erb (0.3ms)
+
+UserMailer#welcome_email: processed outbound mail in 248.4ms
+
+Sent mail to cheraux@yahoo.com (2503.3ms)
+Date: Sat, 13 Jun 2015 18:30:03 -0700
+From: scheraux@gmail.com
+To: cheraux@yahoo.com
+Message-ID: <557cd91b22328_eb0a3ff4b6ce22387649@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd91b20f33_eb0a3ff4b6ce2238763b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd91b20f33_eb0a3ff4b6ce2238763b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd91b20f33_eb0a3ff4b6ce2238763b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd91b20f33_eb0a3ff4b6ce2238763b3--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2761ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:30:05 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:31:29 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+  Rendered user_mailer/welcome_email.text.erb (0.0ms)
+
+UserMailer#welcome_email: processed outbound mail in 9.1ms
+
+Sent mail to cheraux@yahoo.com (2735.8ms)
+Date: Sat, 13 Jun 2015 18:31:29 -0700
+From: scheraux@gmail.com
+To: cheraux@yahoo.com
+Message-ID: <557cd9718d62c_eb0a3ff4b4f9e24476651@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cd9718cc0e_eb0a3ff4b4f9e24476562";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cd9718cc0e_eb0a3ff4b4f9e24476562
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cd9718cc0e_eb0a3ff4b4f9e24476562
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cd9718cc0e_eb0a3ff4b4f9e24476562--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2748ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:31:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:39:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (129.9ms)
+Completed 200 OK in 370ms (Views: 342.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:39:12 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 18:39:18 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QljkJ9FzS6qGSRV7/iUSDOxW4oJoSNXVzUG5DhbV63o=", "user"=>{"email"=>"andrewryancarpenter77@gmail.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.4ms)
+  Rendered user_mailer/welcome_email.text.erb (0.3ms)
+
+UserMailer#welcome_email: processed outbound mail in 339.9ms
+
+Sent mail to andrewryancarpenter77@gmail.com (3006.2ms)
+Date: Sat, 13 Jun 2015 18:39:19 -0700
+From: scheraux@gmail.com
+To: andrewryancarpenter77@gmail.com
+Message-ID: <557cdb473aeba_2613fd693e9798474843@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557cdb47318b8_2613fd693e9798474735";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557cdb47318b8_2613fd693e9798474735
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557cdb47318b8_2613fd693e9798474735
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557cdb47318b8_2613fd693e9798474735--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 3353ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:39:22 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 219ms (Views: 205.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 18:59:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:33 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-06-13 19:00:45 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WY+R4qCvKHO8dyBc1roT/P4YrCBy7Qq5+lD4Z0K9Ew=", "user"=>{"email"=>"cheraux@yahoo.com"}, "commit"=>"Create User"}
+  Rendered user_mailer/welcome_email.html.erb (0.4ms)
+  Rendered user_mailer/welcome_email.text.erb (0.5ms)
+
+UserMailer#welcome_email: processed outbound mail in 224.6ms
+
+Sent mail to cheraux@yahoo.com (2672.4ms)
+Date: Sat, 13 Jun 2015 19:00:45 -0700
+From: scheraux@gmail.com
+To: cheraux@yahoo.com
+Message-ID: <557ce04d56c99_3e63fec893dc81c554d9@dbc00.mail>
+Subject: Welcome to Thunder Talk
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_557ce04d55b11_3e63fec893dc81c55384";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_557ce04d55b11_3e63fec893dc81c55384
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Thunder Talk
+=======================
+
+You have successfully signed up for Thunder Talk!
+
+Thanks for joining and have a great day!
+
+----==_mimepart_557ce04d55b11_3e63fec893dc81c55384
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Thunder Talk</h1>
+    <p>
+      You have successfully signed up for Thunder Talk!
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+----==_mimepart_557ce04d55b11_3e63fec893dc81c55384--
+
+Redirected to http://localhost:8080/
+Completed 302 Found in 2905ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-13 19:00:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-06-13 19:00:53 -0700
