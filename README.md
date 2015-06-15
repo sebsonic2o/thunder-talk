@@ -1,6 +1,8 @@
 # thunder-talk
 
-A simple experiment with background processes. This repository includes the following:
+A simple experiment with background processing...
+
+This repository includes the following:
 
 1. A simple Rails web application that sends an email to the user upon signup without any background process
 
