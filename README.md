@@ -9,13 +9,13 @@ A simple experiment with background processes. This repository includes the foll
 Background processing is implemented as follows:
 
 * Leverage the sidekiq gem for background processing
-..* Add it to the Gemfile, and run 'bundle exec'
-..* Drop 'deliver', and add 'delay' for the email notification in the users controller
+  * Add it to the Gemfile, and run 'bundle exec'
+  * Drop 'deliver', and add 'delay' for the email notification in the users controller
 
 * Add redis to run the background process delegated by sidekiq
-..* Install it with 'brew install redis'
-..* Start it with 'redis-server'
-..* Monitor it with 'redis-cli monitor'
+  * Install it with 'brew install redis'
+  * Start it with 'redis-server'
+  * Monitor it with 'redis-cli monitor'
 
 Here we have a side by side network comparison of the app running with and without the background process:
 
